@@ -1,0 +1,22 @@
+{
+  "slug": "moci",
+  "title": "MOCI Flight Software",
+  "summary": "Multi-view Onboard Computing Imager Flight Software. Small Satellite Research Lab",
+  "year": 2025,
+  "engine": "",
+  "type": "jam",
+  "links": {
+    "play": "https://smallsat.uga.edu/",
+    "repo": null,
+    "caseStudy": "/case-studies/trembling-steppes"
+  },
+  "media": {
+    "cover": "",
+    "video": "",
+    "images": ""
+  },
+  "badges": [
+    { "label": "SSRL", "variant": "filled", "kind": "achievement" },
+    { "label": "UGA",   "variant": "filled", "kind": "tech" }
+  ]
+}

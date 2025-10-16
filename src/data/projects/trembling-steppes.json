@@ -1,7 +1,7 @@
 {
-  "slug": "dragon-of-east",
-  "title": "Dragon of The East",
-  "summary": "Boss Rush Jam — Top 18/853 in Boss Design. Top Down Action RPG.",
+  "slug": "trembling-steppes",
+  "title": "Trembling Steppes",
+  "summary": "Godot Wild Jam — Top 5/128 overal. Visual Novel.",
   "year": 2025,
   "engine": "Godot 4.4",
   "type": "jam",
@@ -16,7 +16,7 @@
     "images": ""
   },
   "badges": [
-    { "label": "Top 18 / 853", "variant": "filled", "kind": "achievement" },
+    { "label": "Top 5 / 128", "variant": "filled", "kind": "achievement" },
     { "label": "Godot 4.4",   "variant": "filled", "kind": "tech" }
   ]
 }

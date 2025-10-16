@@ -18,10 +18,18 @@ console.log(getProjectData("dragon-of-east.json"));
 </div>
 <div class="flex flex-col bg-gray-50 dark:bg-gray-800 items-center justify-center pt-3">
 	<h1 class="text-white font-bold">Highlight</h1>
-	<hr class="border-gray-300 my-4 min-w-100" />
+	<hr class="border-gray-300 my-4 min-w-100 hidden md:block" />
 	<div class="flex flex-wrap gap-20 justify-center p-6 lg:max-w-[calc(80vw)]">
 		<ProjectCard 
+			project_data={getProjectData("trembling-steppes.json") as ProjectData}
+		/>
+
+		<ProjectCard 
 			project_data={getProjectData("dragon-of-east.json") as ProjectData}
+		/>
+
+		<ProjectCard 
+			project_data={getProjectData("moci-flight-software.json") as ProjectData}
 		/>
 
 	</div>
