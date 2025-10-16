@@ -1,6 +1,10 @@
 ---
 import ProjectCard from "./ProjectCard.astro"
+import type { ProjectData } from "../lib/objects/project";
+import { getProjectData } from "../lib/loaders/project_registry";
 
+console.log("A")
+console.log(getProjectData("dragon-of-east.json"));
 ---
 
 <div class="flex items-center justify-center min-h-[calc(100vh-100px)]">
@@ -17,52 +21,8 @@ import ProjectCard from "./ProjectCard.astro"
 	<hr class="border-gray-300 my-4 min-w-100" />
 	<div class="flex flex-wrap gap-20 justify-center p-6 lg:max-w-[calc(80vw)]">
 		<ProjectCard 
-			url="https://origin-nori.itch.io/dragon-of-the-east"
-			title="Trembling Steepe"
-			description="Top 17/853 for Boss Design in the Boss Rush Game Jam"
-			image=""
-			badges={['Game Jam', 'Godot', '5/128 Overall']}
+			project_data={getProjectData("dragon-of-east.json") as ProjectData}
 		/>
 
-		<ProjectCard 
-			url="https://origin-nori.itch.io/dragon-of-the-east"
-			title="Dragon of the East"
-			description="Top 17/853 for Boss Design in the Boss Rush Game Jam"
-			image=""
-			badges={['Game Jam', 'Godot', '18/853 Boss Design']}
-		/>
-
-		<ProjectCard 
-			url="https://origin-nori.itch.io/dragon-of-the-east"
-			title="Dragon of the East"
-			description="Top 17/853 for Boss Design in the Boss Rush Game Jam"
-			image=""
-			buttonText="View project"
-			badges={['Game Jam', 'Godot', '18/853 Boss Design']}
-		/>
-
-		<ProjectCard 
-			url="https://origin-nori.itch.io/dragon-of-the-east"
-			title="Dragon of the East"
-			description="Top 17/853 for Boss Design in the Boss Rush Game Jam"
-			image=""
-			buttonText="View project"
-		/>
-
-		<ProjectCard 
-			url="https://origin-nori.itch.io/dragon-of-the-east"
-			title="Dragon of the East"
-			description="Top 17/853 for Boss Design in the Boss Rush Game Jam"
-			image=""
-			buttonText="View project"
-		/>
-
-		<ProjectCard 
-			url="https://origin-nori.itch.io/dragon-of-the-east"
-			title="Dragon of the East"
-			description="Top 17/853 for Boss Design in the Boss Rush Game Jam"
-			image=""
-			buttonText="View project"
-		/>
 	</div>
 </div>

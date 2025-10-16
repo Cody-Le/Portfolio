@@ -18,6 +18,7 @@ for (const [path, mod] of Object.entries(modules)) {
   byPath.set(path.replaceAll("\\", "/"), data);
   bySlug.set(data.slug, data);
 }
+console.log(modules)
 
 /** Accepts either a Vite path ("/src/data/projects/xxx.json"), a filename ("xxx.json"), or a slug ("xxx"). */
 export function getProjectData(key: string): ProjectData | undefined {

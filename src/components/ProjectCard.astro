@@ -1,24 +1,26 @@
 ---
+import type { ProjectData } from "../lib/objects/project";
 const {
-    url = '#',
-    title = 'Project Title',
-    description = '',
-    image = '',
-    buttonText = 'View project',
-    target = '_blank',
-    badges = [],
+    project_data: ProjectData,
 } = Astro.props;
-
-const relAttr = target === '_blank' ? 'noopener noreferrer' : undefined;
+const {
+    links: { play : href },
+    title,
+    summary = "",
+    image = "",
+    badges = [],
+    buttonText = "View project",
+    openInNewTab = true,
+} = ProjectData;
 ---
-<a href={url} target={target} rel={relAttr} class="">
+<a href={href} class="">
     <div class="flex flex-col w-150 bg-white/80 dark:bg-gray-900/60 rounded-lg shadow hover:shadow-lg transition-shadow duration-200 overflow-hidden border border-gray-100 dark:border-gray-800 aspect-[4/3]  hover:scale-[1.02]">
         {<main class="h-full grow"></main>}
         
         
     <div class="p-4 lg:text-center">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">{title}</h3>
-            {description ? <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">{description}</p> : null}
+            {summary ? <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">{summary}</p> : null}
     </div>   
     {badges.length > 0 ? 
         <div class="px-4 pb-4 flex flex-wrap gap-2 justify-center">
