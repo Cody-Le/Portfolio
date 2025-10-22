@@ -16,10 +16,10 @@ const {
     <div class="flex flex-row w-[calc(90vw)] h-80  rounded-lg shadow hover:shadow-lg transition-shadow duration-200 overflow-hidden border dark:border-gray-800  hover:scale-[1.01] p-2 mb-10">
         {<main class="h-full grow bg-gray-200"></main>}
         
-    <div class="flex flex-col w-[60%] bg-white">
+    <div class="flex flex-col w-[60%] bg-white justify-center">
         <div class="p-4 lg:text-center">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">{title}</h3>
-            {summary ? <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">{summary}</p> : null}
+            <h3 class="text-lg font-semibold text-gray-900 ">{title}</h3>
+            {summary ? <p class="mt-2 text-sm text-gray-600 ">{summary}</p> : null}
         </div>   
         {badges.length > 0 ? 
             <div class="px-4 pb-4 flex flex-wrap gap-2 justify-center">

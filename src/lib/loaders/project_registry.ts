@@ -40,6 +40,31 @@ export function getAllProjectData(): ProjectData[] {
   return Array.from(bySlug.values()).sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
 }
 
+/**
+ * Filter projects by a key path and a desired value.
+ *
+ * keyPath supports dot notation for nested properties (e.g. "links.play" or "metadata.tags").
+ * If the target value at keyPath is an array, this will check membership (includes).
+ * Returns projects in no particular order.
+ */
+export function filterProjectsByKeyValue(keyPath: string, value: unknown): ProjectData[] {
+  const getAtPath = (obj: any, path: string) => {
+    return path.split('.').reduce((o, k) => (o && typeof o === 'object' ? o[k] : undefined), obj);
+  };
+
+  const results: ProjectData[] = [];
+  for (const proj of bySlug.values()) {
+    const v = getAtPath(proj, keyPath);
+    if (v === undefined) continue;
+    if (Array.isArray(v)) {
+      if (v.includes(value)) results.push(proj);
+    } else if (v === value) {
+      results.push(proj);
+    }
+  }
+  return results;
+}
+
 
 export function getProjectDataKeys(): string[] {
   return Array.from(bySlug.keys());
