@@ -4,7 +4,7 @@
   "summary": "Multi-view Onboard Computing Imager Flight Software. Small Satellite Research Lab",
   "year": 2025,
   "engine": "",
-  "type": "jam",
+  "type": "ssrl",
   "links": {
     "play": "https://smallsat.uga.edu/",
     "repo": null,

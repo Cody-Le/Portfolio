@@ -1,0 +1,19 @@
+---
+import { getProjectData, getProjectDataKeys } from '../../lib/loaders/project_registry.ts';
+import LongProjectCard from '../../components/LongProjectCard.astro';
+import type { ProjectData } from '../../lib/objects/project.ts';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+---
+
+<Layout>
+    <Navbar/>
+    <h1>Projects</h1>
+    <div class="flex flex-col bg-gray-50 dark:bg-gray-800 items-center justify-center pt-10 pb-10">
+        {getProjectDataKeys().map((slug) => (
+            <LongProjectCard 
+                project_data={getProjectData(slug) as ProjectData}/>
+        ))}
+
+    </div>
+</Layout>
