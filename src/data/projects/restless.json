@@ -1,0 +1,23 @@
+{
+  "slug": "restless",
+  "title": "Blender x 2D for Stunning Visual",
+  "summary": "Restless - using hand drawn 2D animation combined with 3D environments to create stunning visuals while preseving perfomance.",
+  "year": 2025,
+  "engine": "Godot 4.4",
+  "type": "jam",
+  "links": {
+    "play": "https://origin-nori.itch.io/to-see-hand-drawing-shader",
+    "repo": null,
+    "caseStudy": "/case-studies/trembling-steppes"
+  },
+  "media": {
+    "cover": "",
+    "video": "",
+    "images": ""
+  },
+  "badges": [
+    { "label": "GTMK", "variant": "filled", "kind": "achievement" },
+    { "label": "Blender", "variant": "filled", "kind": "achievement" },
+    { "label": "Godot", "variant": "filled", "kind": "achievement" }
+  ]
+}

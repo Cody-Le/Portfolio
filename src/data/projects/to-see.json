@@ -1,0 +1,21 @@
+{
+  "slug": "to-see",
+  "title": "Hand Drawing Shader",
+  "summary": "To See - A hand-drawing shader for Godot Engine that simulates the look of traditional hand-drawn animation.",
+  "year": 2025,
+  "engine": "Godot 4.1",
+  "type": "jam",
+  "links": {
+    "play": "https://origin-nori.itch.io/to-see-hand-drawing-shader",
+    "repo": null,
+    "caseStudy": "/case-studies/trembling-steppes"
+  },
+  "media": {
+    "cover": "",
+    "video": "",
+    "images": ""
+  },
+  "badges": [
+    { "label": "Shader", "variant": "filled", "kind": "achievement" }
+  ]
+}

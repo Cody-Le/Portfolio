@@ -39,3 +39,8 @@ export function getProjectData(key: string): ProjectData | undefined {
 export function getAllProjectData(): ProjectData[] {
   return Array.from(bySlug.values()).sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
 }
+
+
+export function getProjectDataKeys(): string[] {
+  return Array.from(bySlug.keys());
+}

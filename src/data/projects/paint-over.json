@@ -1,0 +1,22 @@
+{
+  "slug": "paint-over",
+  "title": "Paint Over Plugin",
+  "summary": "Paint Over - a Godot plugin that allows artists to paint directly over 2D sprites in the editor",
+  "year": 2025,
+  "engine": "Godot 4.4",
+  "type": "jam",
+  "links": {
+    "play": "https://origin-nori.itch.io/to-see-hand-drawing-shader",
+    "repo": null,
+    "caseStudy": "/case-studies/trembling-steppes"
+  },
+  "media": {
+    "cover": "",
+    "video": "",
+    "images": ""
+  },
+  "badges": [
+    { "label": "Plugin", "variant": "filled", "kind": "achievement" },
+    { "label": "Godot", "variant": "filled", "kind": "achievement" }
+  ]
+}
