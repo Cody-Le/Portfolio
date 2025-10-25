@@ -2,11 +2,12 @@
   "slug": "ordinary-flower",
   "title": "Ordinary Flower",
   "summary": "Interactive Novel - Story about growing old.",
+  "description": "The game was made in three days, where I experimented with using a core loop scene and Godot’s inheritance system to adapt it for storytelling. The result was a short game that successfully conveyed the story and tone I had in mind. This approach to using inherited scenes later became a foundation for larger projects like Trembling Steppes.",
   "year": 2025,
   "engine": "Godot 4.1",
   "type": "game",
   "links": {
-    "play": "https://origin-nori.itch.io/to-see-hand-drawing-shader",
+    "play": "https://origin-nori.itch.io/ordinary-sunflower",
     "repo": null,
     "caseStudy": "/case-studies/trembling-steppes"
   },
@@ -16,7 +17,7 @@
     "images": ""
   },
   "badges": [
-    { "label": "Mix Jam 12", "variant": "filled", "kind": "achievement" },
+    { "label": "Game Build Club", "variant": "filled", "kind": "achievement" },
     { "label": "Godot 4.1",   "variant": "filled", "kind": "tech" }
   ]
 }

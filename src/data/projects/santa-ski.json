@@ -2,6 +2,7 @@
   "slug": "santa-ski",
   "title": "Santa Ski",
   "summary": "Georgia Winter Game Jam - Top 1/15 general. Top down hyper casual skiing game ",
+  "description": "Santa Ski was made for the Georgia Winter Game Jam, featuring participants from universities across the state. This time, I focused on crafting one fun, polished core loop and pushing the visuals as close to my original vision as possible. With the lessons learned from past jams, I managed to bring it all together — and earned first place.",
   "year": 2025,
   "engine": "Godot 4.2",
   "type": "game",
@@ -17,6 +18,7 @@
   },
   "badges": [
     { "label": "Top 1 / 15", "variant": "filled", "kind": "achievement" },
+    { "label": "Georgia Winter Game Jam", "variant": "filled", "kind": "jam" },
     { "label": "Godot 4.4",   "variant": "filled", "kind": "tech" }
   ]
 }

@@ -2,6 +2,7 @@
   "slug": "dragon-of-east",
   "title": "Dragon of The East",
   "summary": "Boss Rush Jam — Top 18/853 in Boss Design. Top Down Action RPG.",
+  "description": "Dragon of the East was made for the Boss Rush Game Jam. I originally planned three bosses and levels but decided to focus entirely on one—to make the dragon feel as close as possible to the vision I had in my head. The result was a striking, high-ranking boss encounter that I was proud of, but I made it far too difficult. After beating it countless times myself, I overestimated the player’s skill. It taught me the importance of balancing ambition with accessibility and testing beyond my own experience.",
   "year": 2025,
   "engine": "Godot 4.4",
   "type": "game",
@@ -17,6 +18,7 @@
   },
   "badges": [
     { "label": "Top 18 / 853", "variant": "filled", "kind": "achievement" },
+    { "label": "Boss Rush Jam", "variant": "filled", "kind": "jam" },
     { "label": "Godot 4.4",   "variant": "filled", "kind": "tech" }
   ]
 }

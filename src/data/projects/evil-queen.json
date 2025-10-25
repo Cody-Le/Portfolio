@@ -2,11 +2,12 @@
   "slug": "evil-queen",
   "title": "Evil Queen and the Seven Dwarfs",
   "summary": "Godot Wild Jam #70 - Taking the roles of seven dwarfs to fight the evil queen.",
+  "description": "I had a strong concept for this jam, but the execution fell short. The game required seven sets of dwarf animations plus multiple attack patterns for the queen, and the art quickly became a bottleneck. I spent too much time there and lost sight of the core loop, which ended up feeling unintuitive and unbalanced — with unclear telegraphs and overwhelming attacks. I didn’t realize how much theory I was missing until later projects like Hockey, Horse, and Dragon, where I finally began learning what makes a game truly fun.",
   "year": 2025,
   "engine": "Godot 4.1",
   "type": "game",
   "links": {
-    "play": "https://origin-nori.itch.io/to-see-hand-drawing-shader",
+    "play": "https://origin-nori.itch.io/7-dwarfs",
     "repo": null,
     "caseStudy": "/case-studies/trembling-steppes"
   },

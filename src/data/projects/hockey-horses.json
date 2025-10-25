@@ -2,13 +2,12 @@
   "slug": "hockey-horses",
   "title": "Hockey, Horses, and Dragon",
   "summary": "Top Down -  Mix Jam 12. Ride a horse, hit a hockey to damage a Dragon Boss.",
+  "description": "This was a turning point in my game development journey. For a while, I thought I could just “feel it out” without really understanding the basics of game design. The game had everything I wanted on paper, yet still felt bland at best. Finishing it made me realize how little I knew about fun—and it sparked my deep dive into the theory and craft of game design.",
   "year": 2025,
   "engine": "Godot 4.1",
   "type": "game",
   "links": {
-    "play": "https://origin-nori.itch.io/to-see-hand-drawing-shader",
-    "repo": null,
-    "caseStudy": "/case-studies/trembling-steppes"
+    "play": "https://origin-nori.itch.io/hockey-horses-and-dragon"
   },
   "media": {
     "cover": "",

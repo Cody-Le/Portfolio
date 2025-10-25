@@ -2,11 +2,12 @@
   "slug": "ariel-battle",
   "title": "Ariel Battle",
   "summary": "First Game - Single Level 2D Action Platformer.",
+  "description": "This was the first game I ever made, back in middle school. It had one level, no way to close the window, and ended with a Rickroll — yet when I play it now, it’s surprisingly fun and dynamic. I still remember showing it to my friends; their reactions, from frustration to laughter, sparked the desire that eventually brought me back to game development after years away.",
   "year": 2025,
   "engine": "Unity",
   "type": "game",
   "links": {
-    "play": "https://origin-nori.itch.io/dragon-of-the-east",
+    "play": "",
     "repo": null,
     "caseStudy": "/case-studies/trembling-steppes"
   },

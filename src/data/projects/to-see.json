@@ -2,6 +2,7 @@
   "slug": "to-see",
   "title": "To See",
   "summary": "To See - Hand drawn story game.",
+  "description": "To See was the first game I led for the Game Builders Club at UGA. It was a humbling experience managing a team of eight and trying to bring a shared vision to life. Although the story foundation was solid, real-life challenges slowed progress, and we fell significantly short of the original goal. The result was visually impressive, but I lacked the game design fundamentals to make it truly fun — a lesson that reshaped how I approach leadership and development.",
   "year": 2025,
   "engine": "Godot 4.1",
   "type": "game",
@@ -17,7 +18,7 @@
   },
   "badges": [
     { "label": "Game Builder Club", "variant": "filled", "kind": "achievement" },
-    { "label": "Team Lead", "variant": "filled", "kind": "achievement" },
+    { "label": "Team Lead", "variant": "filled", "kind": "role" },
     { "label": "Godot 4.1",   "variant": "filled", "kind": "tech" }
   ]
 }

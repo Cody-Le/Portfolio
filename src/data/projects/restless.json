@@ -2,11 +2,12 @@
   "slug": "restless",
   "title": "Restless",
   "summary": "Restless - Rythm Game about trying to stay awake as long as possible.",
+  "description": "Restless was meant to apply everything I’d learned so far — and in many ways, I failed. Instead of focusing on the fun, I got caught up in the game’s aesthetics. Still, I quickly learned the PBR Blender pipeline and used it to create striking visuals by overlaying 2D characters on top of 3D environments. The result was the best-looking game I’ve ever made, all while running smoothly on the web.",
   "year": 2025,
   "engine": "Godot 4.4",
   "type": "report",
   "links": {
-    "play": "https://origin-nori.itch.io/to-see-hand-drawing-shader",
+    "play": "https://origin-nori.itch.io/restless",
     "repo": null,
     "caseStudy": "/case-studies/trembling-steppes"
   },
@@ -17,7 +18,7 @@
   },
   "badges": [
     { "label": "GTMK", "variant": "filled", "kind": "achievement" },
-    { "label": "Blender", "variant": "filled", "kind": "achievement" },
+    { "label": "Blender", "variant": "filled", "kind": "tool" },
     { "label": "Godot", "variant": "filled", "kind": "achievement" }
   ]
 }

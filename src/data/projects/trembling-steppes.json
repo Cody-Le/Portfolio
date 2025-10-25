@@ -2,6 +2,7 @@
   "slug": "trembling-steppes",
   "title": "Trembling Steppes",
   "summary": "Godot Wild Jam — Top 5/128 overal. Visual Novel.",
+  "description": "Trembling Steppes was made for the Godot Wild Jam #81, developed by a team of five. My goal was to design a core loop that captured the story our writer envisioned, tying gameplay closely to narrative. Even though the final game was buggy, we managed to bring the full story to life within nine days, supported by phenomenal visuals and sound from the team.",
   "year": 2025,
   "engine": "Godot 4.4",
   "type": "game",
@@ -17,6 +18,7 @@
   },
   "badges": [
     { "label": "Top 5 / 128", "variant": "filled", "kind": "achievement" },
+    { "label": "Godot Wild Jam", "variant": "filled", "kind": "jam" },
     { "label": "Godot 4.4",   "variant": "filled", "kind": "tech" }
   ]
 }
