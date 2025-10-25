@@ -20,73 +20,116 @@ import Navbar from '../../components/Navbar.astro';
                 </div>
 
                 <div class="flex-1 flex justify-center">
-                    <h1 class="text-xl text-gray-900 dark:text-white">Games</h1>
+                    <h1 class="text-xl text-gray-900 dark:text-white">Game Journey</h1>
                 </div>
 
-                <div class="flex-1 flex justify-end">
-                    <div class="w-8" aria-hidden="true"></div>
+                <div class="flex-1 flex justify-end items-center">
+                    <!-- Reverse toggle (functional) -->
+                    <button id="reverse-toggle" type="button" aria-pressed="false" title="Reverse order" class="inline-flex items-center gap-2 text-gray-700 bg-white/80 dark:bg-gray-900/60 rounded-full p-2 shadow hover:shadow-md hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11.414V12a1 1 0 01-1.707.707l-3-3a1 1 0 010-1.414l3-3A1 1 0 0111 4.586L9.414 6.172 11 7.758 12.586 6.172 11 4.586z" clip-rule="evenodd" />
+                        </svg>
+                        <span id="reverse-label" class="text-sm text-gray-700 dark:text-gray-300">Reverse</span>
+                    </button>
                 </div>
         </div>
         
-        <div class="flex flex-col items-center justify-center pt-10 pb-10">
-            <h1 class="w-full pl-5 text-white font-thin text-xl">
-                High Ranking
-            <hr class="border-gray-300 my-4 w-1/2 hidden md:block" />
-            </h1>
+    <div id="projects-list" class="flex flex-col items-center justify-center pt-10 pb-10">
+            <LongProjectCard 
+                project_data={getProjectData("ariel-battle.json") as ProjectData}
+            />
+            <LongProjectCard 
+                project_data={getProjectData("alight.json") as ProjectData}
+            />
+            <LongProjectCard 
+                project_data={getProjectData("arise-of-the-roach.json") as ProjectData}
+            />
+
+            <LongProjectCard 
+                project_data={getProjectData("evil-queen.json") as ProjectData}
+            />
+
+            <LongProjectCard 
+                project_data={getProjectData("hockey-horses.json") as ProjectData}
+            />
             
-                <LongProjectCard 
-                    project_data={getProjectData("dragon-of-east.json") as ProjectData}
-                />
-                <LongProjectCard 
-                    project_data={getProjectData("arise-of-the-roach.json") as ProjectData}
-                />
-                <LongProjectCard 
-                    project_data={getProjectData("santa-ski.json") as ProjectData}
-                />
-                <LongProjectCard 
-                    project_data={getProjectData("trembling-steppes.json") as ProjectData}
-                />
-            <h1 class="w-full pl-5 text-white font-thin text-xl">
-                In Team
-             <hr class="border-gray-300 my-4 w-1/2 hidden md:block" />
-            </h1>
-                <LongProjectCard 
-                    project_data={getProjectData("to-see.json") as ProjectData}
-                />
-                <LongProjectCard 
-                    project_data={getProjectData("bunker-jumper.json") as ProjectData}
-                />
-                <LongProjectCard 
-                    project_data={getProjectData("cthulu-slayer.json") as ProjectData}
-                />
-            <h1 class="w-full pl-5 text-white font-thin text-xl">
-                Personal
-             <hr class="border-gray-300 my-4 w-1/2 hidden md:block" />
-            </h1>
-                <LongProjectCard 
-                    project_data={getProjectData("ariel-battle.json") as ProjectData}
-                />
-                <LongProjectCard 
-                    project_data={getProjectData("alight.json") as ProjectData}
-                />
-                <LongProjectCard 
-                    project_data={getProjectData("hockey-horses.json") as ProjectData}
-                />
-            <h1 class="w-full pl-5 text-white font-thin text-xl">
-                Other
-             <hr class="border-gray-300 my-4 w-1/2 hidden md:block" />
-            </h1>
-                <LongProjectCard 
-                    project_data={getProjectData("evil-queen.json") as ProjectData}
-                />
-                <LongProjectCard 
-                    project_data={getProjectData("ordinary-flower.json") as ProjectData}
-                />
-                <LongProjectCard 
-                    project_data={getProjectData("restless.json") as ProjectData}
-                />
-            
+            <LongProjectCard 
+                project_data={getProjectData("ordinary-flower.json") as ProjectData}
+            />
+
+            <LongProjectCard 
+                project_data={getProjectData("to-see.json") as ProjectData}
+            />
+
+            <LongProjectCard 
+                project_data={getProjectData("cthulu-slayer.json") as ProjectData}
+            />
+
+            <LongProjectCard 
+                project_data={getProjectData("bunker-jumper.json") as ProjectData}
+            />
+
+            <LongProjectCard 
+                project_data={getProjectData("trembling-steppes.json") as ProjectData}
+            />
+
+            <LongProjectCard 
+                project_data={getProjectData("dragon-of-east.json") as ProjectData}
+            />
+
+            <LongProjectCard 
+                project_data={getProjectData("santa-ski.json") as ProjectData}
+            />
+
+            <LongProjectCard 
+                project_data={getProjectData("restless.json") as ProjectData}
+            />
+
 
         </div>
     </div>
 </Layout>
+
+        <script>
+            (function(){
+                const toggle = document.getElementById('reverse-toggle');
+                const list = document.getElementById('projects-list');
+                if(!toggle || !list) return;
+
+                // Ensure list starts with flex and flex-col
+                if (!list.classList.contains('flex')) list.classList.add('flex');
+                if (!list.classList.contains('flex-col') && !list.classList.contains('flex-col-reverse')) list.classList.add('flex-col');
+
+                                const label = document.getElementById('reverse-label');
+
+                                                function setReversed() {
+                                                    if (!list || !toggle) return;
+                                                    list.classList.remove('flex-col');
+                                                    list.classList.add('flex-col-reverse');
+                                                    toggle.setAttribute('aria-pressed','true');
+                                                    if (label) label.textContent = 'Inline';
+                                                }
+
+                                                function setNormal() {
+                                                    if (!list || !toggle) return;
+                                                    list.classList.remove('flex-col-reverse');
+                                                    list.classList.add('flex-col');
+                                                    toggle.setAttribute('aria-pressed','false');
+                                                    if (label) label.textContent = 'Reverse';
+                                                }
+
+                        // initialize from localStorage
+                        try {
+                            const saved = localStorage.getItem('projects-reversed');
+                            if (saved === 'true') setReversed(); else setNormal();
+                        } catch (e) {
+                            // localStorage might be unavailable in some environments
+                        }
+
+                        toggle.addEventListener('click', ()=>{
+                            const currentlyReversed = list.classList.contains('flex-col-reverse');
+                            if (currentlyReversed) { setNormal(); } else { setReversed(); }
+                            try { localStorage.setItem('projects-reversed', String(!currentlyReversed)); } catch(e){}
+                        });
+            })();
+        </script>
