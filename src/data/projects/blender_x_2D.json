@@ -1,7 +1,7 @@
 {
-  "slug": "restless",
-  "title": "Restless",
-  "summary": "Restless - Rythm Game about trying to stay awake as long as possible.",
+  "slug": "blender_x_2D",
+  "title": "Blender x 2D for Stunning Visual",
+  "summary": "Restless - using hand drawn 2D animation combined with 3D environments to create stunning visuals while preseving perfomance.",
   "year": 2025,
   "engine": "Godot 4.4",
   "type": "report",

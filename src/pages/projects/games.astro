@@ -29,18 +29,62 @@ import Navbar from '../../components/Navbar.astro';
         </div>
         
         <div class="flex flex-col items-center justify-center pt-10 pb-10">
-            <h1>High Ranking</h1>
-            <LongProjectCard 
-			    project_data={getProjectData("dragon-of-east.json") as ProjectData}
-		    />
-            <LongProjectCard 
-			    project_data={getProjectData("arise-of-the-roach.json") as ProjectData}
-		    />
-            <LongProjectCard 
-			    project_data={getProjectData("santa-ski.json") as ProjectData}
-		    />
-            <h1>In Team</h1>
-            <h1>Other</h1>
+            <h1 class="w-full pl-5 text-white font-thin text-xl">
+                High Ranking
+            <hr class="border-gray-300 my-4 w-1/2 hidden md:block" />
+            </h1>
+            
+                <LongProjectCard 
+                    project_data={getProjectData("dragon-of-east.json") as ProjectData}
+                />
+                <LongProjectCard 
+                    project_data={getProjectData("arise-of-the-roach.json") as ProjectData}
+                />
+                <LongProjectCard 
+                    project_data={getProjectData("santa-ski.json") as ProjectData}
+                />
+                <LongProjectCard 
+                    project_data={getProjectData("trembling-steppes.json") as ProjectData}
+                />
+            <h1 class="w-full pl-5 text-white font-thin text-xl">
+                In Team
+             <hr class="border-gray-300 my-4 w-1/2 hidden md:block" />
+            </h1>
+                <LongProjectCard 
+                    project_data={getProjectData("to-see.json") as ProjectData}
+                />
+                <LongProjectCard 
+                    project_data={getProjectData("bunker-jumper.json") as ProjectData}
+                />
+                <LongProjectCard 
+                    project_data={getProjectData("cthulu-slayer.json") as ProjectData}
+                />
+            <h1 class="w-full pl-5 text-white font-thin text-xl">
+                Personal
+             <hr class="border-gray-300 my-4 w-1/2 hidden md:block" />
+            </h1>
+                <LongProjectCard 
+                    project_data={getProjectData("ariel-battle.json") as ProjectData}
+                />
+                <LongProjectCard 
+                    project_data={getProjectData("alight.json") as ProjectData}
+                />
+                <LongProjectCard 
+                    project_data={getProjectData("hockey-horses.json") as ProjectData}
+                />
+            <h1 class="w-full pl-5 text-white font-thin text-xl">
+                Other
+             <hr class="border-gray-300 my-4 w-1/2 hidden md:block" />
+            </h1>
+                <LongProjectCard 
+                    project_data={getProjectData("evil-queen.json") as ProjectData}
+                />
+                <LongProjectCard 
+                    project_data={getProjectData("ordinary-flower.json") as ProjectData}
+                />
+                <LongProjectCard 
+                    project_data={getProjectData("restless.json") as ProjectData}
+                />
             
 
         </div>

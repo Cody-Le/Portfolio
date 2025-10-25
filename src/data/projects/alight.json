@@ -1,7 +1,8 @@
 {
   "slug": "alight",
   "title": "Alight",
-  "summary": "Second Game - Walk Simulator Horror game.",
+  "summary": "Second Game - Explore a haunted school through eerie VHS surveillance footages.",
+  "description": "Alight was the first project I truly overscoped. The original plan was to create a full-length, 20-hours walking simulator inspired by Detention by Red Candle and Little Nightmares II by Tarsier Studios. It was also my first game after returning to development following a 4–5 year break. The result was messy and buggy—built on top of poor organization that made it hard to scale. Through this project, I learned the importance of keeping a clean structure to make a game actually work.",
   "year": 2025,
   "engine": "Unity",
   "type": "game",
