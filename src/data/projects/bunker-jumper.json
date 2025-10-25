@@ -1,12 +1,12 @@
 {
-  "slug": "to-see",
-  "title": "To See",
-  "summary": "To See - Hand drawn story game.",
+  "slug": "bunker-jumper",
+  "title": "Bunker Jumper",
+  "summary": "Programmer - Top Down Survival Action Game.",
   "year": 2025,
-  "engine": "Godot 4.1",
+  "engine": "Godot",
   "type": "game",
   "links": {
-    "play": "https://origin-nori.itch.io/to-see-hand-drawing-shader",
+    "play": "https://origin-nori.itch.io/dragon-of-the-east",
     "repo": null,
     "caseStudy": "/case-studies/trembling-steppes"
   },
@@ -17,7 +17,7 @@
   },
   "badges": [
     { "label": "Game Builder Club", "variant": "filled", "kind": "achievement" },
-    { "label": "Team Lead", "variant": "filled", "kind": "achievement" },
+    { "label": "Lead Programmer", "variant": "filled", "kind": "achievement" },
     { "label": "Godot 4.1",   "variant": "filled", "kind": "tech" }
   ]
 }

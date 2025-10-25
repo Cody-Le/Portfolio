@@ -1,7 +1,7 @@
 {
-  "slug": "to-see",
-  "title": "To See",
-  "summary": "To See - Hand drawn story game.",
+  "slug": "hockey-horses",
+  "title": "Hockey, Horses, and Dragon",
+  "summary": "Top Down -  Mix Jam 12. Ride a horse, hit a hockey to damage a Dragon Boss.",
   "year": 2025,
   "engine": "Godot 4.1",
   "type": "game",
@@ -16,8 +16,7 @@
     "images": ""
   },
   "badges": [
-    { "label": "Game Builder Club", "variant": "filled", "kind": "achievement" },
-    { "label": "Team Lead", "variant": "filled", "kind": "achievement" },
+    { "label": "Mix Jam 12", "variant": "filled", "kind": "achievement" },
     { "label": "Godot 4.1",   "variant": "filled", "kind": "tech" }
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "slug": "ariel-battle",
+  "title": "Ariel Battle",
+  "summary": "First Game - Single Level 2D Action Platformer.",
+  "year": 2025,
+  "engine": "Unity",
+  "type": "game",
+  "links": {
+    "play": "https://origin-nori.itch.io/dragon-of-the-east",
+    "repo": null,
+    "caseStudy": "/case-studies/trembling-steppes"
+  },
+  "media": {
+    "cover": "",
+    "video": "",
+    "images": ""
+  },
+  "badges": [
+    { "label": "First Game", "variant": "filled", "kind": "achievement" },
+    { "label": "Unity",   "variant": "filled", "kind": "tech" },
+    { "label": "Action",   "variant": "filled", "kind": "tech" },
+    { "label": "Platformer",   "variant": "filled", "kind": "tech" }
+    
+  ]
+}

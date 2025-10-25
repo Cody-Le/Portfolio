@@ -1,7 +1,7 @@
 {
-  "slug": "to-see",
-  "title": "To See",
-  "summary": "To See - Hand drawn story game.",
+  "slug": "cthulhu-slayer",
+  "title": "Cthulhu Slayer",
+  "summary": "Team Builder Club - Team lead. top down shooter where you fight against Cthulhu.",
   "year": 2025,
   "engine": "Godot 4.1",
   "type": "game",

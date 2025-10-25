@@ -29,10 +29,19 @@ import Navbar from '../../components/Navbar.astro';
         </div>
         
         <div class="flex flex-col items-center justify-center pt-10 pb-10">
-            {filterProjectsByKeyValue("type", "game").map((data) => (
-                <LongProjectCard 
-                    project_data={data}/>
-            ))}
+            <h1>High Ranking</h1>
+            <LongProjectCard 
+			    project_data={getProjectData("dragon-of-east.json") as ProjectData}
+		    />
+            <LongProjectCard 
+			    project_data={getProjectData("arise-of-the-roach.json") as ProjectData}
+		    />
+            <LongProjectCard 
+			    project_data={getProjectData("santa-ski.json") as ProjectData}
+		    />
+            <h1>In Team</h1>
+            <h1>Other</h1>
+            
 
         </div>
     </div>

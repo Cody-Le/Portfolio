@@ -1,0 +1,23 @@
+{
+  "slug": "alight",
+  "title": "Alight",
+  "summary": "Second Game - Walk Simulator Horror game.",
+  "year": 2025,
+  "engine": "Unity",
+  "type": "game",
+  "links": {
+    "play": "https://origin-nori.itch.io/dragon-of-the-east",
+    "repo": null,
+    "caseStudy": "/case-studies/trembling-steppes"
+  },
+  "media": {
+    "cover": "",
+    "video": "",
+    "images": ""
+  },
+  "badges": [
+    { "label": "Second Game", "variant": "filled", "kind": "achievement" },
+    { "label": "Unity",   "variant": "filled", "kind": "tech" },
+    { "label": "Walk Simulator",   "variant": "filled", "kind": "tech" }
+  ]
+}

@@ -1,7 +1,7 @@
 {
-  "slug": "to-see",
-  "title": "To See",
-  "summary": "To See - Hand drawn story game.",
+  "slug": "ordinary-flower",
+  "title": "Ordinary Flower",
+  "summary": "Interactive Novel - Story about growing old.",
   "year": 2025,
   "engine": "Godot 4.1",
   "type": "game",
@@ -16,8 +16,7 @@
     "images": ""
   },
   "badges": [
-    { "label": "Game Builder Club", "variant": "filled", "kind": "achievement" },
-    { "label": "Team Lead", "variant": "filled", "kind": "achievement" },
+    { "label": "Mix Jam 12", "variant": "filled", "kind": "achievement" },
     { "label": "Godot 4.1",   "variant": "filled", "kind": "tech" }
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "slug": "arise-of-the-roach",
+  "title": "Arise of the Roach",
+  "summary": "1 Bit Game Jam - Top 17/546 Theme. Top Down Survival Game.",
+  "year": 2025,
+  "engine": "Unity",
+  "type": "game",
+  "links": {
+    "play": "https://origin-nori.itch.io/dragon-of-the-east",
+    "repo": null,
+    "caseStudy": "/case-studies/trembling-steppes"
+  },
+  "media": {
+    "cover": "",
+    "video": "",
+    "images": ""
+  },
+  "badges": [
+    { "label": "Top 17 / 546", "variant": "filled", "kind": "achievement" },
+    { "label": "Unity",   "variant": "filled", "kind": "tech" }
+  ]
+}

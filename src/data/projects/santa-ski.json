@@ -1,0 +1,22 @@
+{
+  "slug": "santa-ski",
+  "title": "Santa Ski",
+  "summary": "Georgia Winter Game Jam - Top 1/15 general. Top down hyper casual skiing game ",
+  "year": 2025,
+  "engine": "Godot 4.2",
+  "type": "game",
+  "links": {
+    "play": "https://origin-nori.itch.io/dragon-of-the-east",
+    "repo": null,
+    "caseStudy": "/case-studies/trembling-steppes"
+  },
+  "media": {
+    "cover": "",
+    "video": "",
+    "images": ""
+  },
+  "badges": [
+    { "label": "Top 1 / 15", "variant": "filled", "kind": "achievement" },
+    { "label": "Godot 4.4",   "variant": "filled", "kind": "tech" }
+  ]
+}

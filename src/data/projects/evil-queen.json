@@ -1,7 +1,7 @@
 {
-  "slug": "to-see",
-  "title": "To See",
-  "summary": "To See - Hand drawn story game.",
+  "slug": "evil-queen",
+  "title": "Evil Queen and the Seven Dwarfs",
+  "summary": "Godot Wild Jam #70 - Taking the roles of seven dwarfs to fight the evil queen.",
   "year": 2025,
   "engine": "Godot 4.1",
   "type": "game",
@@ -16,8 +16,7 @@
     "images": ""
   },
   "badges": [
-    { "label": "Game Builder Club", "variant": "filled", "kind": "achievement" },
-    { "label": "Team Lead", "variant": "filled", "kind": "achievement" },
+    { "label": "Godot Wild Jam #70",   "variant": "filled", "kind": "achievement" },
     { "label": "Godot 4.1",   "variant": "filled", "kind": "tech" }
   ]
 }
