@@ -1,11 +1,58 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import NavBar from "../components/Navbar.astro"
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
 ---
 
 
 <Layout>
-    <NavBar/>
-    <h1>Hi, I am Loc</h1>
-    <p>I am currently a sophomore studying at the University of Georgia, US. </p>
+    <Navbar />
+
+    <main class="py-12">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <article class="prose dark:prose-invert prose-lg leading-relaxed">
+                <h1 class="text-3xl font-bold mb-3">About Me</h1>
+
+                <p>
+                   Hi, I’m a sophomore turning junior at the University of Georgia. 
+                   Originally from Vietnam, my family and I immigrated to the U.S. 
+                   for a fresh start.
+                </p>
+                <p>
+                    I’ve spent most of my life coding and experimenting with small 
+                    projects—many of them unfinished prototypes that taught me how to 
+                    learn by building. The projects you see here are the ones I’ve developed 
+                    during my time at UGA.
+                </p>
+                <p>
+                    I’ve devoted most of my university years to making games—leading teams in 
+                    the Game Builders Club during the semester and joining game jams during 
+                    breaks. By my sophomore year, I joined the Small Satellite Research Lab, 
+                    which expanded my perspective beyond games and gave me the confidence to bring 
+                    more technical tools and structure into my creative work.
+                </p>
+                <p>
+                    I’m drawn to introspective stories, complex engineering challenges, and the 
+                    theory behind how games create meaningful experiences for players. Whether 
+                    it’s replicating an industry-standard encryption protocol, crafting a beautiful 
+                    shader, or experimenting with game design, I love the process of turning ideas 
+                    into reality.
+                </p>
+                <p>
+                    I’m currently exploring how systems thinking in engineering can inform narrative 
+                    and emotional design in games. On the technical side, I’m focused on helping turn 
+                    the Multiview Onboard Computational Imager (MOCI) satellite into a reality.
+                </p>
+                <p>
+                    I’m interested in internships and collaborations that bridge design and 
+                    engineering—whether that means working on gameplay systems, simulation tools, or 
+                    research projects that push creative technology forward.
+                </p>
+                <p>
+                    You can reach me at <b>loc.ba.le0402@gmail.com.</b>
+                </p>
+                    
+            </article>
+        </div>
+    </main>
+
 </Layout>
