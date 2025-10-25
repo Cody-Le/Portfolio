@@ -1,7 +1,7 @@
 {
   "slug": "bunker-jumper",
   "title": "Bunker Jumper",
-  "summary": "Programmer - Top Down Survival Action Game.",
+  "summary": "Game Builder Club - Top down action to survive for as a long as possible in the apocolypse.",
   "description": "After two semesters of team leading, I decided to step back for a time due to school commitments. With a more dedicated team that semester, we managed to realize nearly 100% of the original vision. As lead programmer, I focused on keeping the project’s structure clean and guided Aidan through his first experience leading a team. I also experimented with advanced programming patterns, including multiple concurrent state machines for the player system. The result was one of the best games I’ve ever worked on.",
   "year": 2025,
   "engine": "Godot",

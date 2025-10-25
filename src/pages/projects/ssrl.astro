@@ -1,1 +1,77 @@
-<p>Below are my contributions to the Small Satellite Research Lab as a flight software member</p>
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+---
+
+
+<Layout>
+    <Navbar />
+
+    <main class="py-12">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <article class="prose dark:prose-invert prose-lg leading-relaxed">
+                <h1 class="text-3xl font-bold mb-3">Small Satellite Research Lab</h1>
+
+                <p>
+                    The Small Satellite Research Lab at the University of Georgia focuses on developing CubeSats — 
+                    compact satellites built to a standard form factor that allows for off-the-shelf parts, lower cost, 
+                    and accessibility for educational programs. You can read more about CubeSats 
+                    <a href="https://www.nasa.gov/wp-content/uploads/2017/03/nasa_csli_cubesat_101_508.pdf" class="font-bold underline">here.</a>
+                </p>
+
+                <p>
+                    In the spring of 2025, while recovering from an ACL injury, I joined the flight software team 
+                    for the Multiview Onboard Computational Imager (MOCI). MOCI captures pairs of images of a target 
+                    (for example, Mt. Etna) and reconstructs 3D geometry using an onboard Structure-from-Motion algorithm. 
+                    Extra details about MOCI can be found 
+                    <a href="hhttp://piepieninja.github.io/research-papers/thesis.pdf" class="font-bold underline">here.</a>
+                </p>
+
+                <p>
+                    During my time at the lab, I contributed to two key areas: the satellite’s automated communication flow and the integration of GPS data into the Structure-from-Motion (SfM) pipeline.
+                </p>
+
+                <h2 class="mt-8 text-2xl font-semibold">Automated Communication Flow</h2>
+
+                <p>
+                    The Automated Communication Flow receives telemetry from the satellite and determines the next set of commands to send back. The full pipeline is as follows: receive telemetry → generate a CSV file with scheduled actions → convert to a bytestream → add headers and encrypt → modulate → transmit to the satellite.
+                </p>
+
+                <p>
+                    My contribution focused on the conversion, header generation, and encryption stages of this pipeline.
+                </p>
+
+                <p>
+                    Previously, these steps were handled by a control tool called TMTC Lab, which supported encryption and header generation but lacked the ability to schedule commands for specific times. To address this limitation, we replaced its functionality with a Python-based implementation.
+                </p>
+
+                <p>
+                    I analyzed the communication stack between our ground tool and the satellite’s TMTC Lab interface to find where encryption occurred, identified the CCSDS protocol in use, and validated its correctness by reviewing source code and generating test encryptions under different assumptions.
+                </p>
+
+                <p>
+                    I then implemented the new pipeline in Python: refactoring code to process CSV scheduler files into hex-formatted bytestreams, and building a module to apply CCSDS headers, encryption, and checksums to each packet. The result replicated TMTC Lab’s processing pipeline while adding scheduling and autonomous operation.
+                </p>
+
+                <h2 class="mt-8 text-2xl font-semibold">GPS to SfM</h2>
+
+                <p>
+                    The next ongoing task involves feeding GPS information into the Structure-from-Motion algorithm. SfM combines positional, rotational, and camera data with captured images to reconstruct 3D models. You can read more about the underlying system in Caleb Adams’s thesis.
+                </p>
+
+                <p>
+                    My role was to map position and rotation data into the format the SfM implementation expects. This required understanding the control flow between image capture and data processing modes, and creating inter-component communication between the GPS and GPU interface modules.
+                </p>
+
+                <p>
+                    Our current bottleneck is obtaining valid GPS fixes from the antenna, which previously returned dummy values.
+                </p>
+                <h2 class="mt-8 text-2xl font-semibold">Thought</h2>
+                <p>
+                    Working on these tasks deepened my understanding of satellite software architecture and data flows, and improved my ability to read and reason about lower-level C code. It also strengthened my debugging and cross-component integration skills within an embedded systems environment.
+                </p>
+            </article>
+        </div>
+    </main>
+
+</Layout>

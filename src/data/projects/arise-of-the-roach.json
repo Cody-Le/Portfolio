@@ -1,8 +1,8 @@
 {
   "slug": "arise-of-the-roach",
   "title": "Arise of the Roach",
-  "summary": "1 Bit Game Jam - Top 17/546 Theme. Top Down Survival Game.",
-  "description": "In this jam, I focused on building around one fun core loop, spending the first three days refining balance before adding visuals. The game was well received, with sound design being the main criticism. It also included a hidden easter egg, though I didn’t make its clues clear enough for players to find it.",
+  "summary": "1 Bit Game Jam - Top 17/546 Theme. Top down survival game to push away a herd of cockroaches.",
+  "description": "This was my first game jam. Following some tips from youtube, I focused on building around one fun core loop, spending the first three days refining balance before visuals. All those choices eventually lead to the game being well received, with sound design being the main criticism. It also features an easter egg which I failed to make it clear enough for the player to reach. ",
   "year": 2025,
   "engine": "Unity",
   "type": "game",
