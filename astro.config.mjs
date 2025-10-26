@@ -7,7 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://cody-le.github.io/Portfolio',
   base: '/Portfolio',
-
+  output: 'static',
   vite: {
     plugins: [tailwindcss()],
   },

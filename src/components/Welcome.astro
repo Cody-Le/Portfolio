@@ -4,8 +4,7 @@ import type { ProjectData } from "../lib/objects/project";
 import { getProjectData } from "../lib/loaders/project_registry";
 import Contact from "./Contact.astro";
 
-console.log("A")
-console.log(getProjectData("dragon-of-east.json"));
+console.log(import.meta.env.BASE_URL)
 ---
 
 <div class="flex items-center justify-center min-h-[calc(100vh-140px)]">
@@ -17,7 +16,7 @@ console.log(getProjectData("dragon-of-east.json"));
     playsinline
     class="fixed inset-0 w-full h-full object-cover"
   >
-    <source src="/videos/background_redo.webm" type="video/webm" />
+    <source src={`${import.meta.env.BASE_URL}/videos/background_redo.webm`} type="video/webm" />
   </video>
   <div class="absolute inset-0 bg-black/50"></div>
 	<div class="relative z-10 flex flex-col items-center">
