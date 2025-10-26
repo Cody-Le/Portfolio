@@ -7,14 +7,11 @@
   "engine": "Godot 4.2",
   "type": "game",
   "links": {
-    "play": "https://origin-nori.itch.io/dragon-of-the-east",
-    "repo": null,
-    "caseStudy": "/case-studies/trembling-steppes"
+    "play": "https://origin-nori.itch.io/dragon-of-the-east"
   },
   "media": {
-    "cover": "",
-    "video": "",
-    "images": ""
+    "cover": "/images/santa_ski_cover.png",
+    "video": "/videos/santa-ski.webm"
   },
   "badges": [
     { "label": "Top 1 / 15", "variant": "filled", "kind": "achievement" },

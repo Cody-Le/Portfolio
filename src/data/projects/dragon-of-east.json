@@ -7,14 +7,10 @@
   "engine": "Godot 4.4",
   "type": "game",
   "links": {
-    "play": "https://origin-nori.itch.io/dragon-of-the-east",
-    "repo": null,
-    "caseStudy": "/case-studies/trembling-steppes"
-  },
+    "play": "https://origin-nori.itch.io/dragon-of-the-east"},
   "media": {
-    "cover": "",
-    "video": "",
-    "images": ""
+    "cover": "/images/doe_cover.png",
+    "video": "/videos/doe.webm"
   },
   "badges": [
     { "label": "Top 18 / 853", "variant": "filled", "kind": "achievement" },
