@@ -9,7 +9,7 @@ const {
     title,
     summary = "",
     description = "",
-    image = "",
+    media: { cover : image, video : video },
     badges = [],
 } = ProjectData;
 const previewLength = 110;
@@ -18,8 +18,13 @@ const previewText = isLong ? description.slice(0, previewLength).trim() + '... r
 const slug = title ? title.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-_]/g,'') : Math.random().toString(36).slice(2,8);
 ---
 <a class="">
-    <div class="flex flex-col md:flex-row w-[calc(90vw)] md:h-100  rounded-lg shadow hover:shadow-lg transition-shadow duration-200 overflow-hidden border dark:border-gray-800  hover:scale-[1.01] p-2 mb-10">
-        {<main class="h-60 md:h-full md:grow bg-gray-200"></main>}
+    <div class="flex flex-col md:flex-row w-[calc(90vw)] md:h-120  rounded-lg shadow hover:shadow-lg transition-shadow duration-200 overflow-hidden border dark:border-gray-800  hover:scale-[1.01] p-2 mb-10">
+        <div class="md:w-[40%] md:h-full ]h-60 :w-full items-center justify-center relative flex overflow-hidden bg-gray-100 dark:bg-gray-800 group">
+        {image ? <img src={`${import.meta.env.BASE_URL}` + image} alt={title} class="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-300 group-hover:opacity-0" /> : null}
+        {video ? <video preload="metadata" muted loop playsinline class="absolute inset-0 w-full h-full object-cover object-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <source src={`${import.meta.env.BASE_URL}` + video} type="video/mp4" />
+        </video> : null}
+    </div>
         
     <div class="flex flex-col md:w-[60%] bg-white justify-center">
         <div class="p-4 text-rig">
@@ -80,4 +85,52 @@ document.addEventListener('DOMContentLoaded', () => {
     preview.addEventListener('keydown', handleKeydown);
   });
 });
+</script>
+
+<script>
+  document.querySelectorAll('video').forEach(video => {
+    const container = video.closest('.group');
+    if (!container) return;
+    
+    // Mobile behavior: play when near center of viewport
+    if (window.matchMedia('(max-width: 768px)').matches) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting && entry.intersectionRatio > 0.7) {
+              video.classList.add('opacity-100');
+              video.classList.remove('opacity-0');
+              video.play().catch(() => {
+                // Autoplay might be blocked
+              });
+            } else {
+              video.classList.remove('opacity-100');
+              video.classList.add('opacity-0');
+              video.pause();
+              video.currentTime = 0;
+            }
+          });
+        },
+        {
+          root: null, // use viewport
+          threshold: [0.3, 0.7], // trigger at 30% and 70% visibility
+          rootMargin: '-10% 0px' // slightly offset to favor center of screen
+        }
+      );
+      observer.observe(container);
+    } 
+    // Desktop behavior: play on hover
+    else {
+      container.addEventListener('mouseenter', () => {
+        video.play().catch(() => {
+          // Autoplay may be blocked, that's okay
+        });
+      });
+      
+      container.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0;
+      });
+    }
+  });
 </script>

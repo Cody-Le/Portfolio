@@ -10,9 +10,8 @@
     "play": "https://origin-nori.itch.io/hockey-horses-and-dragon"
   },
   "media": {
-    "cover": "",
-    "video": "",
-    "images": ""
+    "cover": "/images/hockey_horses_dragon_cover.png",
+    "video": "/videos/hockey-horses-dragon.webm"
   },
   "badges": [
     { "label": "Mix Jam 12", "variant": "filled", "kind": "achievement" },

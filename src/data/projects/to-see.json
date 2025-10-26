@@ -12,9 +12,8 @@
     "caseStudy": "/case-studies/trembling-steppes"
   },
   "media": {
-    "cover": "",
-    "video": "",
-    "images": ""
+    "cover": "/images/to_see_cover.png",
+    "video": "/videos/to-see.webm"
   },
   "badges": [
     { "label": "Game Builder Club", "variant": "filled", "kind": "achievement" },

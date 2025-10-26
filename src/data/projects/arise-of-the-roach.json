@@ -10,9 +10,8 @@
     "play": "https://origin-nori.itch.io/arise-of-the-roaches"
   },
   "media": {
-    "cover": "",
-    "video": "",
-    "images": ""
+    "cover": "/images/arise_of_roaches_cover.png",
+    "video": "/videos/arise-of-roaches.webm"
   },
   "badges": [
     { "label": "Top 17 / 546", "variant": "filled", "kind": "achievement" },

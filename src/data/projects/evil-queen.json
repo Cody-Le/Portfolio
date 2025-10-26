@@ -12,9 +12,8 @@
     "caseStudy": "/case-studies/trembling-steppes"
   },
   "media": {
-    "cover": "",
-    "video": "",
-    "images": ""
+    "cover": "/images/evil_queen_cover.png",
+    "video": "/videos/evil-queen.webm"
   },
   "badges": [
     { "label": "Godot Wild Jam #70",   "variant": "filled", "kind": "achievement" },

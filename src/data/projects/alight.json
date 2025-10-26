@@ -12,9 +12,8 @@
     "caseStudy": "/case-studies/trembling-steppes"
   },
   "media": {
-    "cover": "",
-    "video": "",
-    "images": ""
+    "cover": "/images/alight_cover.png",
+    "video": "/videos/alight.webm"
   },
   "badges": [
     { "label": "Second Game", "variant": "filled", "kind": "achievement" },

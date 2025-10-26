@@ -12,9 +12,8 @@
     "caseStudy": "/case-studies/trembling-steppes"
   },
   "media": {
-    "cover": "",
-    "video": "",
-    "images": ""
+    "cover": "/images/cthulhu_slayer_cover.png",
+    "video": "/videos/cthulhu-slayer.webm"
   },
   "badges": [
     { "label": "Game Builder Club", "variant": "filled", "kind": "achievement" },

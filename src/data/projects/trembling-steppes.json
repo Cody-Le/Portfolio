@@ -12,9 +12,8 @@
     "caseStudy": "/case-studies/trembling-steppes"
   },
   "media": {
-    "cover": "",
-    "video": "",
-    "images": ""
+    "cover": "/images/trembling_steppes_cover.png",
+    "video": "/videos/trembling-steppes.webm"
   },
   "badges": [
     { "label": "Top 5 / 128", "variant": "filled", "kind": "achievement" },

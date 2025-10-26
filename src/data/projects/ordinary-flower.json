@@ -12,9 +12,8 @@
     "caseStudy": "/case-studies/trembling-steppes"
   },
   "media": {
-    "cover": "",
-    "video": "",
-    "images": ""
+    "cover": "/images/ordinary_flower_cover.png",
+    "video": "/videos/ordinary-flower.webm"
   },
   "badges": [
     { "label": "Game Build Club", "variant": "filled", "kind": "achievement" },

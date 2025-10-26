@@ -12,9 +12,8 @@
     "caseStudy": "/case-studies/trembling-steppes"
   },
   "media": {
-    "cover": "",
-    "video": "",
-    "images": ""
+    "cover": "/images/ariel_battle_cover.png",
+    "video": "/videos/ariel-battle.webm"
   },
   "badges": [
     { "label": "First Game", "variant": "filled", "kind": "achievement" },

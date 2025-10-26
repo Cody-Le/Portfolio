@@ -10,9 +10,8 @@
     "play": "https://saidan-games.itch.io/bunker-jumper"
   },
   "media": {
-    "cover": "",
-    "video": "",
-    "images": ""
+    "cover": "/images/bunker_jumper_cover.png",
+    "video": "/videos/bunker-jumper.webm"
   },
   "badges": [
     { "label": "Game Builder Club", "variant": "filled", "kind": "achievement" },

@@ -12,9 +12,8 @@
     "caseStudy": "/case-studies/trembling-steppes"
   },
   "media": {
-    "cover": "",
-    "video": "",
-    "images": ""
+    "cover": "/images/restless_cover.png",
+    "video": "/videos/restless.webm"
   },
   "badges": [
     { "label": "GTMK", "variant": "filled", "kind": "achievement" },
