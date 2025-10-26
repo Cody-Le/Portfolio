@@ -45,15 +45,45 @@ const {
     const container = video.closest('.group');
     if (!container) return;
     
-    container.addEventListener('mouseenter', () => {
-      video.play().catch(() => {
-        // Autoplay may be blocked, that's okay
+    // Mobile behavior: play when near center of viewport
+    if (window.matchMedia('(max-width: 768px)').matches) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting && entry.intersectionRatio > 0.7) {
+              video.classList.add('opacity-100');
+              video.classList.remove('opacity-0');
+              video.play().catch(() => {
+                // Autoplay might be blocked
+              });
+            } else {
+              video.classList.remove('opacity-100');
+              video.classList.add('opacity-0');
+              video.pause();
+              video.currentTime = 0;
+            }
+          });
+        },
+        {
+          root: null, // use viewport
+          threshold: [0.3, 0.7], // trigger at 30% and 70% visibility
+          rootMargin: '-10% 0px' // slightly offset to favor center of screen
+        }
+      );
+      observer.observe(container);
+    } 
+    // Desktop behavior: play on hover
+    else {
+      container.addEventListener('mouseenter', () => {
+        video.play().catch(() => {
+          // Autoplay may be blocked, that's okay
+        });
       });
-    });
-    
-    container.addEventListener('mouseleave', () => {
-      video.pause();
-      video.currentTime = 0;
-    });
+      
+      container.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0;
+      });
+    }
   });
 </script>

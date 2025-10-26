@@ -7,3 +7,11 @@
   --font-dm-sans: "DM Sans", sans-serif; 
   --font-source-serif-4: "Source Serif 4", serif;
 }
+
+@layer utilities {
+  .no-scrollbar {
+    -ms-overflow-style: none;     /* IE/Edge */
+    scrollbar-width: none;        /* Firefox */
+  }
+  .no-scrollbar::-webkit-scrollbar { display: none; } /* Chrome/Safari */
+}
