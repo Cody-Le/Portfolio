@@ -11,7 +11,7 @@
   },
   "media": {
     "cover": "/images/santa_ski_cover.png",
-    "video": "/videos/santa-ski.webm"
+    "video": "/videos/santa_ski.webm"
   },
   "badges": [
     { "label": "Top 1 / 15", "variant": "filled", "kind": "achievement" },

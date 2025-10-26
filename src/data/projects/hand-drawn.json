@@ -11,9 +11,7 @@
     "caseStudy": "/case-studies/trembling-steppes"
   },
   "media": {
-    "cover": "",
-    "video": "",
-    "images": ""
+    
   },
   "badges": [
     { "label": "Shader", "variant": "filled", "kind": "achievement" }

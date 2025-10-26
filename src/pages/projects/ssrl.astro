@@ -9,8 +9,8 @@ import Navbar from '../../components/Navbar.astro';
 
     <main class="py-12">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <article class="prose dark:prose-invert prose-lg leading-relaxed">
-                <h1 class="text-3xl font-bold mb-3">Small Satellite Research Lab</h1>
+            <article class="prose dark:prose-invert prose-lg leading-relaxed font-source-serif-4">
+                <h1 class="text-3xl font-bold mb-3 font-dm-sans">Small Satellite Research Lab</h1>
 
                 <p>
                     The 
@@ -33,7 +33,7 @@ import Navbar from '../../components/Navbar.astro';
                     During my time at the lab, I contributed to two key areas: the satellite’s automated communication flow and the integration of GPS data into the Structure-from-Motion (SfM) pipeline.
                 </p>
 
-                <h2 class="mt-8 text-2xl font-semibold">Automated Communication Flow</h2>
+                <h2 class="mt-8 text-2xl font-semibold font-dm-sans">Automated Communication Flow</h2>
 
                 <p>
                     The Automated Communication Flow receives telemetry from the satellite and determines the next set of commands to send back. The full pipeline is as follows: receive telemetry → generate a CSV file with scheduled actions → convert to a bytestream → add headers and encrypt → modulate → transmit to the satellite.
@@ -55,7 +55,7 @@ import Navbar from '../../components/Navbar.astro';
                     I then implemented the new pipeline in Python: refactoring code to process CSV scheduler files into hex-formatted bytestreams, and building a module to apply CCSDS headers, encryption, and checksums to each packet. The result replicated TMTC Lab’s processing pipeline while adding scheduling and autonomous operation.
                 </p>
 
-                <h2 class="mt-8 text-2xl font-semibold">GPS to SfM</h2>
+                <h2 class="mt-8 text-2xl font-semibold font-dm-sans">GPS to SfM</h2>
 
                 <p>
                     The next ongoing task involves feeding GPS information into the Structure-from-Motion algorithm. SfM combines positional, rotational, and camera data with captured images to reconstruct 3D models. You can read more about the underlying system in Caleb Adams’s thesis.
@@ -68,7 +68,7 @@ import Navbar from '../../components/Navbar.astro';
                 <p>
                     Our current bottleneck is obtaining valid GPS fixes from the antenna, which previously returned dummy values.
                 </p>
-                <h2 class="mt-8 text-2xl font-semibold">Thought</h2>
+                <h2 class="mt-8 text-2xl font-semibold font-dm-sans">Thought</h2>
                 <p>
                     Working on these tasks deepened my understanding of satellite software architecture and data flows, and improved my ability to read and reason about lower-level C code. It also strengthened my debugging and cross-component integration skills within an embedded systems environment.
                 </p>

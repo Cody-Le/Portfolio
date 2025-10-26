@@ -8,21 +8,31 @@ import Navbar from '../../components/Navbar.astro';
 
 <Layout>
     <Navbar/>
-    <div class="flex flex-col max-h-screen h-screen bg-gray-50 dark:bg-gray-800 items-center justify-center pt-10 pb-10">
-        <h1 class="text-white font-bold">Pick One to View More!</h1>
-        <div class="flex flex-col md:flex-row">
+    <video
+    autoplay
+    loop
+    muted
+    playsinline
+    class="fixed inset-0 w-full h-full object-cover"
+    >
+        <source src={`${import.meta.env.BASE_URL}/videos/background_redo.webm`} type="video/webm" />
+    </video>
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="fixed w-full z-10 flex flex-col max-h-screen h-screen  items-center justify-center">
+        <h1 class="text-text-primary font-bold text-shadow-2xs font-dm-sans">Pick One to View More!</h1>
+        <div class="flex flex-col md:flex-row font-source-serif-4 mt-4">
             
-            <a href="projects/games">
-                <button class="w-35 text-center m-4 p-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors duration-200">
+            <a href="./projects/games">
+                <button class="w-35 text-center m-4 p-4 text-text-secondary bg-secondary transition-colors duration-200">
                     Games
                 </button>
             </a>
           
-            <button class="w-35 text-center m-4 p-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors duration-200">
-                <a href="projects/ssrl">SSRL</a>
+            <button class="w-35 text-center m-4 p-4 text-text-secondary bg-secondary transition-colors duration-200">
+                <a href="./projects/ssrl">SSRL</a>
             </button>
-            <button class="w-35 text-center m-4 p-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors duration-200">
-                <a href="projects/other">Tool/Shader</a>
+            <button class="w-35 text-center m-4 p-4 text-text-secondary bg-secondary transition-colors duration-200">
+                <a href="./projects/other">Tool/Shader</a>
             </button>
         </div>
     </div>
