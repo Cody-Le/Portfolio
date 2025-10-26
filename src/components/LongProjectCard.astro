@@ -19,15 +19,15 @@ const slug = title ? title.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-_
 ---
 <a class="">
     <div class="flex flex-col md:flex-row w-[calc(90vw)] md:h-120  rounded-lg shadow hover:shadow-lg transition-shadow duration-200 overflow-hidden border dark:border-gray-800  hover:scale-[1.01] p-2 mb-10">
-        <div class="md:w-[40%] md:h-full ]h-60 :w-full items-center justify-center relative flex overflow-hidden bg-gray-100 dark:bg-gray-800 group">
-        {image ? <img src={`${import.meta.env.BASE_URL}` + image} alt={title} class="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-300 group-hover:opacity-0" /> : null}
-        {video ? <video preload="metadata" muted loop playsinline class="absolute inset-0 w-full h-full object-cover object-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div class="md:w-[40%] md:h-full] h-60 :w-full items-center justify-center relative flex overflow-hidden bg-gray-100 dark:bg-gray-800 group">
+        {image ? <img src={`${import.meta.env.BASE_URL}` + image} alt={title} class="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-300 group-hover:opacity-0 md:rounded-l-xl md:rounded-t-none rounded-t-sm" /> : null}
+        {video ? <video preload="metadata" muted loop playsinline class="absolute inset-0 w-full h-full object-cover object-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 md:rounded-l-xl md:rounded-t-none rounded-t-sm">
             <source src={`${import.meta.env.BASE_URL}` + video} type="video/mp4" />
         </video> : null}
     </div>
         
-    <div class="flex flex-col md:w-[60%] bg-white justify-center">
-        <div class="p-4 text-rig">
+    <div class="flex flex-col md:w-[60%] bg-white justify-center md:rounded-r-xl md:rounded-r-none rounded-b-sm">
+        <div class="p-4 md:p-10 text-rig">
             <h3 class="text-lg font-semibold text-gray-900">{title}</h3>
             {summary ? <p class="mt-2 text-sm text-gray-800 font-thin">{summary}</p> : null}
             <div class="block md:hidden">
