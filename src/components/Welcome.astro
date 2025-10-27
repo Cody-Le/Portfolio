@@ -32,7 +32,7 @@ console.log(import.meta.env.BASE_URL)
 </div>
 <div class="relative z-10 flex flex-col bg-secondary items-center justify-center pt-3">
 	<h1 class="text-text-primary font-bold font-dm-sans">Highlight</h1>
-	<hr class="text-text-primary my-4 min-w-100 hidden md:block" />
+	<hr class="text-accent bg- my-4 min-w-100 hidden md:block" />
 	<div class="flex flex-wrap gap-20 justify-center pt-6 pb-6 lg:max-w-[calc(80vw)]">
 		<ProjectCard 
 			project_data={getProjectData("santa-ski.json") as ProjectData}
@@ -60,7 +60,7 @@ console.log(import.meta.env.BASE_URL)
 		
 	</div>
 	<button class="m-4 mt-20 mb-20 m-10">
-			<a href=`${import.meta.env.BASE_URL}/projects` class="font-dm-sans px-4 py-2 text-text-primary bg-primary transition-colors duration-200 m-10">
+			<a href=`${import.meta.env.BASE_URL}/projects` class="font-dm-sans px-4 py-2 text-accent bg-highlight font-bold transition-colors duration-200 m-10">
 				View All Projects </a>
 		</button>
 	<Contact />
