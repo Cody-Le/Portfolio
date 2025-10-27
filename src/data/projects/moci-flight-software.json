@@ -6,7 +6,7 @@
   "engine": "",
   "type": "ssrl",
   "links": {
-    "play": "https://smallsat.uga.edu/",
+    "play": "./Portfolio/projects/ssrl",
     "repo": null,
     "caseStudy": "/case-studies/trembling-steppes"
   },

@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://cody-le.github.io/Portfolio',
+  site: 'https://cody-le.github.io/',
   base: '/Portfolio',
   output: 'static',
   vite: {
