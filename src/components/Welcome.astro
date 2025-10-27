@@ -7,7 +7,7 @@ import Contact from "./Contact.astro";
 console.log(import.meta.env.BASE_URL)
 ---
 
-<div class="flex items-center justify-center min-h-[calc(100vh-140px)] no-scrollbar relative overflow-auto">
+<div class="flex items-center justify-center min-h-[calc(100vh-140px)] no-scrollbar relative overflow-auto bg-secondary">
 	<!-- Background video -->
   <video
     autoplay
@@ -20,8 +20,11 @@ console.log(import.meta.env.BASE_URL)
   </video>
   <div class="absolute inset-0 bg-black/50"></div>
 	<div class="relative z-10 flex flex-col items-center">
-		<h1 class="font-bold text-3xl mb-3 font-dm-sans text-text-primary text-shadow-2xs">Loc Le</h1>	
-		<p class="w-100 text-center max-w-[calc(80vw)] font-source-serif-4 text-text-secondary text-shadow-2xs">I build interactive systems - from jam-winning games to satellite software.</p>
+		<h1 class="font-bold text-3xl mb-3 font-dm-sans text-accent text-shadow-2xs">Loc Le</h1>	
+		<p class="w-100 text-center max-w-[calc(80vw)] font-source-serif-4 text-text-secondary text-shadow-2xs ">
+			I <b class="underline text-highlight">build</b> interactive systems - from jam-winning 
+			<b class="underline text-highlight">games</b> to satellite software.
+		</p>
 	</div>
 
 	

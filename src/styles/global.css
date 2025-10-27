@@ -6,10 +6,12 @@
 @theme {
   --font-dm-sans: "DM Sans", sans-serif; 
   --font-source-serif-4: "Source Serif 4", serif;
-  --color-primary: #2C2C2C; /* Tailwind's blue-800 */
-  --color-secondary: #1C1C1C; /* Tailwind's blue-600 */
-  --color-text-primary: #FFF; /* Tailwind's gray-900 */
-  --color-text-secondary: #EEE; /* Tailwind's gray-500 */
+  --color-primary: #14080E; /* Tailwind's blue-800 */
+  --color-secondary: #000909; /* Tailwind's blue-600 */
+  --color-text-primary: #FFF9EC ; /* Tailwind's gray-900 */
+  --color-text-secondary: #FFF9EC;
+  --color-accent: #FFD6BA; /* Tailwind's gray-500 */
+  --color-highlight: #D52941; 
 }
 
 @layer utilities {
