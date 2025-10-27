@@ -6,12 +6,12 @@
   "engine": "",
   "type": "ssrl",
   "links": {
-    "play": "./Portfolio/projects/ssrl",
+    "play": "ROOT/projects/ssrl",
     "repo": null,
     "caseStudy": "/case-studies/trembling-steppes"
   },
   "media": {
-    "cover": "",
+    "cover": "/images/MOCI_cover.png",
     "video": "",
     "images": ""
   },

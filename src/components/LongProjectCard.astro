@@ -16,8 +16,9 @@ const previewLength = 110;
 const isLong = description && description.length > previewLength;
 const previewText = isLong ? description.slice(0, previewLength).trim() + '... read more' : description;
 const slug = title ? title.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-_]/g,'') : Math.random().toString(36).slice(2,8);
+const actual_href = href.replace("ROOT", `${import.meta.env.BASE_URL}`);
 ---
-<a class="">
+<a class="" href = {actual_href}>
     <div class="flex flex-col md:flex-row w-[calc(90vw)] md:h-120  rounded-lg shadow hover:shadow-lg transition-shadow duration-200 overflow-hidden border dark:border-gray-800  hover:scale-[1.01] p-2 mb-10">
         <div class="md:w-[40%] md:h-full h-60 w-full items-center justify-center relative flex overflow-hidden bg-primary group">
         {image ? <img src={`${import.meta.env.BASE_URL}` + image} alt={title} class="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-300 group-hover:opacity-0 md:rounded-l-xl md:rounded-t-none rounded-t-sm" /> : null}
