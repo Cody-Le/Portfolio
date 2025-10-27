@@ -19,21 +19,21 @@ import Navbar from '../../components/Navbar.astro';
     </video>
     <div class="absolute inset-0 bg-black/50"></div>
     <div class="fixed w-full z-10 flex flex-col max-h-screen h-screen  items-center justify-center">
-        <h1 class="text-text-primary font-bold text-shadow-2xs font-dm-sans">Pick One to View More!</h1>
+        <h1 class="text-accent font-bold text-shadow-2xs font-dm-sans">Pick One to View More!</h1>
         <div class="flex flex-col md:flex-row font-source-serif-4 mt-4">
             
-            <a href="./projects/games">
-                <button class="w-35 text-center m-4 p-4 text-text-secondary bg-secondary transition-colors duration-200">
+            <a href=`${import.meta.env.BASE_URL}/projects/games`>
+                <button class="w-35 text-center m-4 p-4 text-text-secondary bg-highlight hover:bg-accent transition-colors duration-200">
                     Games
                 </button>
             </a>
-            <a href="./projects/ssrl">
-                <button class="w-35 text-center m-4 p-4 text-text-secondary bg-secondary transition-colors duration-200">
+            <a href=`${import.meta.env.BASE_URL}/projects/ssrl`>
+                <button class="w-35 text-center m-4 p-4 text-text-secondary bg-highlight hover:bg-accent transition-colors duration-200">
                     SSRL
                 </button>
             </a>
-            <button class="w-35 text-center m-4 p-4 text-text-secondary bg-secondary transition-colors duration-200">
-                <a href="./projects/other">Tool/Shader</a>
+            <button class="w-35 text-center m-4 p-4 text-text-secondary bg-highlight hover:bg-accent transition-colors duration-200">
+                <a href=`${import.meta.env.BASE_URL}/projects/other`>Tool/Shader</a>
             </button>
         </div>
     </div>

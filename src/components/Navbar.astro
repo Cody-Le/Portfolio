@@ -4,15 +4,15 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
             <div class="flex items-center">
-                <a href="/Portfolio" class="text-lg font-bold  font-dm-sans text-accent">Loc Le</a>
+                <a href=`${import.meta.env.BASE_URL}/` class="text-lg font-bold  font-dm-sans text-accent">Loc Le</a>
             </div>
 
             <!-- Desktop menu -->
             <div class="hidden md:flex md:items-center md:space-x-6 font-source-serif-4">
-                <a href="/Portfolio" class= "text-text-primary text-text-primary">Home</a>
-                <a href="/Portfolio/projects" class=" text-text-primary">Projects</a>
+                <a href=`${import.meta.env.BASE_URL}` class= "text-text-primary text-text-primary">Home</a>
+                <a href=`${import.meta.env.BASE_URL}/projects` class=" text-text-primary">Projects</a>
     
-                <a href="/Portfolio/about_me" class=" text-text-primary">About Me</a>
+                <a href=`${import.meta.env.BASE_URL}/about_me` class=" text-text-primary">About Me</a>
                 <a href="#contact" class=" text-text-primary">Contact</a>
             </div>
 
@@ -32,9 +32,9 @@
 
     <!-- Mobile menu, show/hide based on button -->
     <div id="mobile-menu" class="md:hidden hidden px-2 pt-2 pb-3 space-y-1">
-        <a href="/Portfolio" class="block px-3 py-2 rounded-md text-base font-medium text-text-primary">Home</a>
-        <a href="/Portfolio/projects" class="block px-3 py-2 rounded-md text-base font-medium text-text-primary">Projects</a>
-        <a href="/Portfolio/about_me" class="block px-3 py-2 rounded-md text-base font-medium text-text-primary">About Me</a>
+        <a href=`${import.meta.env.BASE_URL}/` class="block px-3 py-2 rounded-md text-base font-medium text-text-primary">Home</a>
+        <a href=`${import.meta.env.BASE_URL}/projects` class="block px-3 py-2 rounded-md text-base font-medium text-text-primary">Projects</a>
+        <a href=`${import.meta.env.BASE_URL}/about_me` class="block px-3 py-2 rounded-md text-base font-medium text-text-primary">About Me</a>
         <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-text-primary">Contact</a>
     </div>
 
