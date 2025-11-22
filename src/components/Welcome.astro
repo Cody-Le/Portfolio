@@ -35,6 +35,10 @@ console.log(import.meta.env.BASE_URL)
 	<hr class="text-accent bg- my-4 min-w-100 hidden md:block" />
 	<div class="flex flex-wrap gap-20 justify-center pt-6 pb-6 lg:max-w-[calc(80vw)]">
 		<ProjectCard 
+			project_data={getProjectData("before-the-sunset") as ProjectData}
+		/>
+
+		<ProjectCard 
 			project_data={getProjectData("santa-ski.json") as ProjectData}
 		/>
 
@@ -52,10 +56,6 @@ console.log(import.meta.env.BASE_URL)
 
 		<ProjectCard 
 			project_data={getProjectData("moci-flight-software.json") as ProjectData}
-		/>
-
-		<ProjectCard 
-			project_data={getProjectData("paint-over.json") as ProjectData}
 		/>
 		
 	</div>
