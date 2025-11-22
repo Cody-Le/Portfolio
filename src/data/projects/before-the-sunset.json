@@ -1,0 +1,24 @@
+{
+  "slug": "before-the-sunset",
+  "title": "Before The Sunset",
+  "summary": "Before the Sunset",
+  "description": "Before the Sunset was the first game where I successfully combined all my prior systems: the map-loading framework from Trembling Steppes, 2D visuals from Santa Ski, mechanics from Dragon of the East, and 3D animation work from Restless. Built in three weeks for the Comfy Game Jam, it became my strongest project to date. However, its ambitious scope meant I couldn’t playtest in time, and many players couldn’t finish the intended ten-minute experience.",
+  "year": 2025,
+  "engine": "Godot",
+  "type": "game",
+  "links": {
+    "play": "",
+    "repo": null,
+    "caseStudy": "/case-studies/trembling-steppes"
+  },
+  "media": {
+    "cover": "/images/before_the_sunset_cover.png",
+    "video": "/videos/before-the-sunset.webm"
+  },
+  "badges": [
+    { "label": "Favorite", "variant": "filled", "kind": "achievement" },
+    { "label": "Comfy Game Jam", "variant": "filled", "kind": "jam" },
+    { "label": "Godot",   "variant": "filled", "kind": "tech" }
+    
+  ]
+}
